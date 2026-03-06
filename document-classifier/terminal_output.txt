@@ -1,0 +1,116 @@
+#######train_pipeline.py#######
+Total documents: 30
+Classes: {'HR', 'Finance', 'IT'}
+Class distribution: HR=10, Finance=10, IT=10
+
+Training samples: 24
+Testing samples: 6
+
+Pipeline created with TF-IDF Vectorizer and Logistic Regression
+
+Training the model...
+Training complete!
+
+Model Accuracy: 50.00%
+
+Classification Report:
+============================================================
+              precision    recall  f1-score   support
+
+     Finance       0.67      1.00      0.80         2
+          HR       0.50      0.50      0.50         2
+          IT       0.00      0.00      0.00         2
+
+    accuracy                           0.50         6
+   macro avg       0.39      0.50      0.43         6
+weighted avg       0.39      0.50      0.43         6
+
+
+Pipeline saved successfully to 'model_pipeline.joblib'
+
+You can now use 'predict_service.py' to classify new documents!
+
+
+#######predict_service.py#######
+
+Loading the trained model pipeline...
+✓ Pipeline loaded successfully!
+
+New documents to classify:
+======================================================================
+1. submit expense report for business travel reimbursement
+2. employee attendance tracking and time management system
+3. firewall configuration and network intrusion detection
+4. annual budget forecast and cost analysis review
+5. password reset request and account security verification
+6. employee termination process and final settlement
+
+
+Classification Results:
+======================================================================
+
+Document 1:
+Text: submit expense report for business travel reimbursement
+Predicted Class: Finance
+Confidence: 45.86%
+Probability Distribution:
+  Finance: 45.86%
+  HR: 26.19%
+  IT: 27.95%
+
+Document 2:
+Text: employee attendance tracking and time management system
+Predicted Class: HR
+Confidence: 36.62%
+Probability Distribution:
+  Finance: 36.62%
+  HR: 35.55%
+  IT: 27.84%
+
+Document 3:
+Text: firewall configuration and network intrusion detection
+Predicted Class: IT
+Confidence: 40.08%
+Probability Distribution:
+  Finance: 32.16%
+  HR: 27.76%
+  IT: 40.08%
+
+Document 4:
+Text: annual budget forecast and cost analysis review
+Predicted Class: Finance
+Confidence: 37.99%
+Probability Distribution:
+  Finance: 37.99%
+  HR: 34.27%
+  IT: 27.73%
+
+Document 5:
+Text: password reset request and account security verification
+Predicted Class: IT
+Confidence: 40.08%
+Probability Distribution:
+  Finance: 32.16%
+  HR: 27.76%
+  IT: 40.08%
+
+Document 6:
+Text: employee termination process and final settlement
+Predicted Class: HR
+Confidence: 49.68%
+Probability Distribution:
+  Finance: 26.08%
+  HR: 49.68%
+  IT: 24.24%
+
+======================================================================
+Classification complete!
+
+======================================================================
+Testing single document classification function:
+======================================================================
+
+Document: cloud server deployment and infrastructure management
+Predicted Class: IT
+
+Confidence: 42.82%
