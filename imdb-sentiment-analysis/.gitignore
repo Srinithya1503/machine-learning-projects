@@ -1,0 +1,185 @@
+# ==================== PYTHON ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==================== VIRTUAL ENVIRONMENTS ====================
+venv/
+ENV/
+env/
+.venv
+venv.bak/
+env.bak/
+
+# ==================== IDE & EDITORS ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.atom/
+.vim/
+
+# ==================== JUPYTER NOTEBOOK ====================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+*checkpoint.ipynb
+*.ipynb~
+
+# ==================== DATA FILES ====================
+# Raw dataset (large files)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.tar.gz
+data/raw/*.parquet
+data/raw/IMDb*.csv
+
+# Keep processed data but ignore raw
+!data/processed/
+
+# ==================== MODEL FILES (Optional) ====================
+# Uncomment to prevent tracking large model files to Git
+# models/*.pkl
+# models/*.joblib
+# models/*.h5
+# models/*.pth
+
+# ==================== LOGS & TEMPORARY FILES ====================
+*.log
+*.logs
+logs/
+*.tmp
+*.temp
+tmp/
+temp/
+*.cache
+*.bak
+
+# ==================== SYSTEM FILES ====================
+.DS_Store
+Thumbs.db
+*.lnk
+.AppleDouble
+.LSOverride
+
+# ==================== ENVIRONMENT VARIABLES ====================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.txt
+
+# ==================== OUTPUT & ARTIFACTS ====================
+# Keep outputs folder but ignore large generated files
+outputs/**/*.pkl
+outputs/**/*.joblib
+
+# ==================== RESEARCH & SCRATCH ====================
+scratch/
+experimental/
+test_files/
+sandbox/
+.experiments/
+
+# ==================== STREAMLIT ====================
+.streamlit/
+streamlit_cache/
+
+# ==================== OS SPECIFIC ====================
+# macOS
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+ehthumbs.db
+desktop.ini
+
+# Linux
+.directory
+
+# ==================== IDE SPECIFIC ====================
+# PyCharm
+*.iml
+out/
+.idea_modules/
+
+# VSCode
+*.code-workspace
+.vscode-test
+
+# Sublime Text
+package-metadata.json
+*.sublime-settings
+
+# ==================== MACOS ====================
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ==================== COVERAGE & TESTING ====================
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ==================== BUILD ARTIFACTS ====================
+*.egg-info
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# ==================== MISCELLANEOUS ====================
+*.orig
+*.rej
+*.swp
+.#*
