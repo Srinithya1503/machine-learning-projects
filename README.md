@@ -69,7 +69,7 @@ Some highlighted projects from this repository include:
 | Project                | Description                                          | Techniques                          |
 | ---------------------- | ---------------------------------------------------- | ----------------------------------- |
 | Sentiment Analysis     | NLP model to classify sentiment in text              | NLP, TF-IDF, Logistic Regression    |
-| Credit Risk Prediction | Predict default risk using financial features        | Classification, Feature Engineering |
+| Fraud Risk Analysis    | Predict default risk using financial features        | Classification, Feature Engineering |
 | Customer Segmentation  | Discover customer groups using unsupervised learning | Clustering                          |
 | Sales Forecasting      | Predict future sales trends                          | Regression                          |
 
