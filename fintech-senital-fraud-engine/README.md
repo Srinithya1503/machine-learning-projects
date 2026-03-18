@@ -1,7 +1,8 @@
 # FinTech Sentinel: High-Precision Fraud & Risk Engine
 
 Engineered a multi-layered fraud detection system for a credit card dataset, transitioning from a 0% baseline detection to a high-impact model that secured 83.25% of total fraudulent capital ($3.32M) while maintaining operational feasibility.
-[kaggle](https://www.kaggle.com/code/auro15/fraud-analytics)
+
+[![kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?logo=kaggle&logoColor=white)(https://www.kaggle.com/code/auro15/fraud-analytics)]
 
 ------------------------------
 ## Project Pipeline
