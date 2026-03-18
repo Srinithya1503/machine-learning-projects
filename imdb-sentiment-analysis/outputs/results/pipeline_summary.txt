@@ -1,0 +1,46 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                        PROJECT SUMMARY                                    ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📊 DATA:
+   • Raw dataset: 50,000 reviews
+   • Training set: 40,000 reviews (80%)
+   • Test set: 10,000 reviews (20%)
+
+🤖 MODELS TRAINED:
+   • Logistic Regression  → 88.71% accuracy
+   • Naïve Bayes          → 85.52% accuracy
+   • SVM                  → 87.78% accuracy
+
+🏆 BEST MODEL: Logistic Regression
+   (88.71% accuracy)
+
+💾 SAVED ARTIFACTS:
+   Models:       models/
+   Results:      outputs/results/model_performance.csv
+   Visualizations: outputs/visualizations/
+
+🚀 NEXT STEPS:
+   1. View results: cat outputs/results/model_performance.csv
+   2. Run dashboard: streamlit run app.py
+   3. Explore notebook: jupyter notebook notebooks/sentiment_analysis.ipynb
+   4. Make predictions: python -c "import sentiment_analysis"
+
+📚 PRODUCTION USAGE:
+   import pickle
+   from src.preprocessing import preprocess_text
+
+   # Load model and vectorizer
+   vectorizer = pickle.load(open('models/tfidf_vectorizer.pkl', 'rb'))
+   model = pickle.load(open('models/logistic_regression.pkl', 'rb'))
+
+   # Predict
+   review = "Your movie review here"
+   cleaned = preprocess_text(review)
+   prediction = model.predict(vectorizer.transform([cleaned]))[0]
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║  Thank you for using IMDb Sentiment Analysis! 🎬                          ║
+║  Questions? Check README.md or visit: https://github.com/Srinithya1503    ║
+╚════════════════════════════════════════════════════════════════════════════╝
