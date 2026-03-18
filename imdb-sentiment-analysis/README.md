@@ -63,16 +63,7 @@ imdb_sentiment_analysis/
 ├── .gitignore                         # Git ignore patterns
 ├── sentiment_analysis_main.py         # Main end-to-end pipeline
 ├── app.py                             # Streamlit dashboard
-│
-├── data/
-│   ├── raw/
-│   │   └── IMDB Dataset.csv           # Original dataset (download from Kaggle)
-│   ├── processed/
-│   │   └── cleaned_reviews.csv        # Preprocessed data
-│   └── README.md                      # Data documentation
-│
-├── notebooks/
-│   └── sentiment_analysis.ipynb       # Interactive Jupyter notebook
+├── sentiment_analysis.ipynb       # Interactive Jupyter notebook
 │
 ├── src/
 │   ├── __init__.py
